@@ -82,17 +82,17 @@ http://localhost:3000
 
 ### Posts Endpoints
 
-###1. Get All Posts
+### 1. Get All Posts
    - Method: GET
    - URL: `http://localhost:3000/api/posts`
    - Response: List of all posts with user details
 
-###2. Get User's Posts
+### 2. Get User's Posts
    - Method: GET
    - URL: `http://localhost:3000/api/posts/user/1` (replace 1 with user ID)
    - Response: List of posts for specific user
 
-###3. Create Post
+### 3. Create Post
    - Method: POST
    - URL: `http://localhost:3000/api/posts`
    - Body (raw JSON):
@@ -105,7 +105,7 @@ http://localhost:3000
    }
    ```
 
-###4. Update Post
+### 4. Update Post
    - Method: PUT
    - URL: `http://localhost:3000/api/posts/1` (replace 1 with post ID)
    - Body (raw JSON):
@@ -116,7 +116,7 @@ http://localhost:3000
    }
    ```
 
-###5. Delete Post
+### 5. Delete Post
    - Method: DELETE
    - URL: `http://localhost:3000/api/posts/1` (replace 1 with post ID)
 
