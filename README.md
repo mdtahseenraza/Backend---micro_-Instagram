@@ -63,12 +63,12 @@ http://localhost:3000
 
 ### Users Endpoints
 
-###1. Get All Users
+### 1. Get All Users
    - Method: GET
    - URL: `http://localhost:3000/api/users`
    - Response: List of all users
 
-###2. Create User
+### 2. Create User
    - Method: POST
    - URL: `http://localhost:3000/api/users`
    - Body (raw JSON):
