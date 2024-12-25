@@ -74,9 +74,9 @@ http://localhost:3000
    - Body (raw JSON):
    ```json
    {
-     "name": "John Doe",
-     "mobileNumber": 1234567890,
-     "address": "123 Main St"
+     "name": "Tahseen",
+     "mobileNumber": 786786786786,
+     "address": "Ranchi"
    }
    ```
 
