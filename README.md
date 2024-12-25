@@ -136,8 +136,6 @@ CREATE TABLE users (
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 
--- Index for mobile_number lookups
-CREATE UNIQUE INDEX idx_users_mobile_number ON users(mobile_number);
 ```
 
 ### Posts Table
@@ -152,8 +150,6 @@ CREATE TABLE posts (
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 
--- Index for user_id lookups
-CREATE INDEX idx_posts_user_id ON posts(user_id);
 ```
 
 ## Setup Instructions
