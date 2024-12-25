@@ -54,6 +54,72 @@ A Node.js-based backend service for a simplified Instagram-like application. Thi
 - `POST /api/users/:userId/posts` - Create a new post
 - `PUT /api/posts/:postId` - Edit a post
 - `DELETE /api/posts/:postId` - Delete a post
+## API Testing with Postman
+
+### Base URL
+```
+http://localhost:3000
+```
+
+### Users Endpoints
+
+1. Get All Users
+   - Method: GET
+   - URL: `http://localhost:3000/api/users`
+   - Response: List of all users
+
+2. Create User
+   - Method: POST
+   - URL: `http://localhost:3000/api/users`
+   - Body (raw JSON):
+   ```json
+   {
+     "name": "John Doe",
+     "mobileNumber": 1234567890,
+     "address": "123 Main St"
+   }
+   ```
+
+### Posts Endpoints
+
+1. Get All Posts
+   - Method: GET
+   - URL: `http://localhost:3000/api/posts`
+   - Response: List of all posts with user details
+
+2. Get User's Posts
+   - Method: GET
+   - URL: `http://localhost:3000/api/posts/user/1` (replace 1 with user ID)
+   - Response: List of posts for specific user
+
+3. Create Post
+   - Method: POST
+   - URL: `http://localhost:3000/api/posts`
+   - Body (raw JSON):
+   ```json
+   {
+     "title": "My Post",
+     "description": "Post description",
+     "userId": 1,
+     "imageUrls": ["https://example.com/image.jpg"]
+   }
+   ```
+
+4. Update Post
+   - Method: PUT
+   - URL: `http://localhost:3000/api/posts/1` (replace 1 with post ID)
+   - Body (raw JSON):
+   ```json
+   {
+     "title": "Updated Title",
+     "description": "Updated description"
+   }
+   ```
+
+5. Delete Post
+   - Method: DELETE
+   - URL: `http://localhost:3000/api/posts/1` (replace 1 with post ID)
+
 
 ## Database Schema
 
