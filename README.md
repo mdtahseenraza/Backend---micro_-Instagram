@@ -204,4 +204,4 @@ CREATE INDEX idx_posts_user_id ON posts(user_id);
 
 ##Screenshot
 ```
-![Project Screenshot](https://github.com/mdtahseenraza/Backend-microInstagram/blob/main/Demo/Screenshot%202024-12-25%20225531.png)```
+![Project Screenshot 2](https://github.com/mdtahseenraza/Backend-microInstagram/blob/main/Demo/Screenshot%202024-12-25%20225531.png)
