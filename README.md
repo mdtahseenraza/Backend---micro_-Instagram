@@ -63,9 +63,14 @@ CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(256) NOT NULL,
     mobile_number BIGINT UNIQUE NOT NULL,
-    address TEXT,
-    post_count INTEGER DEFAULT 0
+    address TEXT NOT NULL,
+    post_count INTEGER DEFAULT 0,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Index for mobile_number lookups
+CREATE UNIQUE INDEX idx_users_mobile_number ON users(mobile_number);
 ```
 
 ### Posts Table
@@ -73,10 +78,15 @@ CREATE TABLE users (
 CREATE TABLE posts (
     id SERIAL PRIMARY KEY,
     title TEXT NOT NULL,
-    description TEXT,
-    user_id INTEGER REFERENCES users(id),
-    images TEXT[]
+    description TEXT NOT NULL,
+    user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+    images TEXT[] DEFAULT ARRAY[]::TEXT[],
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
+
+-- Index for user_id lookups
+CREATE INDEX idx_posts_user_id ON posts(user_id);
 ```
 
 ## Setup Instructions
@@ -124,23 +134,11 @@ CREATE TABLE posts (
    npm test
    ```
 
-## Testing
-
-The project includes comprehensive unit tests for all API endpoints using Jest. Test files are located in the `_tests_` directory.
-
-## API Testing
-
-API testing can be performed using Postman. Import the provided Postman collection for easy testing of all endpoints.
-
 ## Development Tools
 
 - VSCode for development
 - PostgreSQL for database management
 - Postman for API testing
-
-## Video Demo
-
-A video demonstration of the project setup and functionality is available [here](insert-video-link).
 
 ## Contributing
 
