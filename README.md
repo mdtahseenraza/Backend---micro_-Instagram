@@ -28,6 +28,8 @@ A Node.js-based backend service for a simplified Instagram-like application. Thi
 ├── index.js            # Application entry point
 └── package.json        # Project dependencies
 ```
+![Project Screenshot](https://github.com/mdtahseenraza/Backend---micro_-Instagram/blob/main/Demo/Screenshot%202024-12-25%20212028.png)```
+
 
 ## Features
 
