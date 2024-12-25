@@ -207,9 +207,9 @@ CREATE INDEX idx_posts_user_id ON posts(user_id);
 Here are some screenshots showcasing the project:
 
 1. **Project Screenshot 1**  
-![Project Screenshot 1](https://github.com/mdtahseenraza/Backend-microInstagram/blob/main/Demo/Screenshot%202024-12-25%20212028.png)
+![Project Screenshot 1](https://github.com/mdtahseenraza/Backend-microInstagram/blob/main/Demo/Screenshot%202024-12-25%20225531.png)
 
 2. **Project Screenshot 2**  
-![Project Screenshot 2](https://github.com/mdtahseenraza/Backend-microInstagram/blob/main/Demo/Screenshot%202024-12-25%20225531.png)
+![Project Screenshot 2](https://github.com/mdtahseenraza/Backend-microInstagram/blob/main/Demo/Screenshot%202024-12-25%20230304.png)
 
-These screenshots highlight the application's features and functionality.
+These screenshots provide a visual representation of the application's features and functionality.
